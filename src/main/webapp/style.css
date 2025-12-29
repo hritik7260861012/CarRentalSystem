@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body {
+	
+    background: linear-gradient(135deg, #667eea, #764ba2);
+   background-image: url("image.jpg");
+    background-size: cover;       /* full screen */
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Card */
+.container {
+    width: 400px;
+    margin: 80px auto;
+    padding: 25px;
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.container:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+}
+
+h2 {
+    text-align: center;
+    color: #2c2c54;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Inputs */
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: #f1f2f6;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Hover + Focus */
+input:focus {
+    outline: none;
+    border: 2px solid #6c5ce7;
+    box-shadow: 0 0 8px #6c5ce7;
+}
+
+/* Button */
+input[type=submit] {
+    width: 100%;
+    background: linear-gradient(135deg, #00dbde, #fc00ff);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover */
+input[type=submit]:hover {
+    background: linear-gradient(135deg, #fc00ff, #00dbde);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Table */
+table {
+    width: 85%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Table Header */
+table th {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* Table Data */
+table td {
+    padding: 12px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+/* Row Hover */
+table tr:hover td {
+    background-color: #feca57;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #6c5ce7;
+    font-weight: bold;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/* Link Hover */
+a:hover {
+    color: #ff4757;
+    letter-spacing: 1px;
+}
